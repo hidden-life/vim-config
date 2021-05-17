@@ -20,13 +20,15 @@ endif
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+Plugin 'VundleVim/Vundle.vim'
+
 if vundleStatus == 0
 	echo "Installing bundles..."
 	echo ""
 	:PluginInstall
 endif
 
-Plugin 'VundleVim/Vundle.vim'
+"Plugin 'VundleVim/Vundle.vim'
 Plugin 'joshdick/onedark.vim'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'itchyny/lightline.vim'
