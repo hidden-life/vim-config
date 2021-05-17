@@ -20,6 +20,12 @@ endif
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+if vundleStatus == 0
+	echo "Installing bundles..."
+	echo ""
+	:PluginInstall
+endif
+
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'joshdick/onedark.vim'
 Plugin 'sheerun/vim-polyglot'
