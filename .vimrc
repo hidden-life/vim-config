@@ -25,6 +25,7 @@ Plugin 'VundleVim/Vundle.vim'
 if vundleStatus == 0
 	echo "Installing bundles..."
 	echo ""
+	:source $MYVIMRC
 	:PluginInstall
 endif
 
